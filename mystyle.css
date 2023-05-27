@@ -1,0 +1,255 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Merriweather', Arial, sans-serif;
+}
+
+#mainNav {
+    background-color: #00529F;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-bottom: 4rem;
+}
+
+#mainNav .navbar-brand{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F1EEE9;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #FEBE10;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link{
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F1EEE9;
+    align-items: end;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover{
+    color: #FEBE10;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    color: #F1EEE9;
+}
+
+.bgimg {
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('img/bg_realmadrid.jpg');
+    height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption .textImg {
+    background-color: #111;
+    color: #F1EEE9;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    opacity: 0.75;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heading-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: #00529F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main {
+    margin-bottom:  5rem;
+}
+
+#form-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#search-box {
+    margin-right: 0.5rem;
+    width: 50%;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 1.5rem;
+}
+
+#btn-search {
+    background-color: #00529F;
+    color: #F1EEE9;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#btn-search:hover, #btn-search:focus {
+    background-color: #FEBE10;
+    color: #F1EEE9;
+}
+
+.add-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.add-data a{
+    text-decoration: none;
+}
+
+#btn-add {
+    text-decoration: none;
+    background-color: #00529F;
+    color: #F1EEE9;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#btn-add:hover, #btn-add:focus {
+    background-color: #FEBE10;
+    color: #F1EEE9;
+}
+
+#table-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table-view th {
+    background-color: #00529F;
+    color: #F1EEE9;
+}
+
+#table-view th, #table-view td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#table-view tr:nth-child(odd) {
+    background-color: #F1EEE9;
+}
+
+#table-view tr:nth-child(odd) {
+    background-color: #d7dfe7;
+}
+
+#table-view tr:hover {
+    background-color: grey;
+}
+
+#table-view i{
+    color: #00529F;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#form-input .row-form{
+    padding: 1rem;
+}
+
+#form-input label, #form-input input, #form-input select {
+    font-size: 1rem;
+}
+
+#form-input label {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#form-input input, #form-input select {
+    width: 100%;
+    border-radius: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#form-input select {
+    border: 0.1rem solid black;
+}
+
+#form-input .input-form .form-control {
+    padding: 0.7rem;
+    border: 0.1rem solid black;
+}
+
+#form-input #btn-input-position {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#btn-input {
+    background-color: #00529F;
+    color: #F1EEE9;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+footer{    
+    padding: 1rem;
+    background-color: #00529F;
+}
+
+footer a:link, footer a:visited {
+    color: #F1EEE9;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+    color: #FEBE10;
+    text-decoration: none;
+}
