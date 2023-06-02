@@ -28,6 +28,16 @@ if (isset($_POST['register'])) {
     if ($saved) {
         header("Location: login.php");
         exit;
+    } 
+    // If the save query is not successful, the user is not registered
+    // Redirect to the register page
+    else {
+        echo "
+        <script>
+                alert('Failed to register!');
+                document.location.href = 'register.php';
+        </script>
+        ";
     }
 }
 ?>
