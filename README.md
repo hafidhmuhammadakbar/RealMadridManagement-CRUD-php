@@ -8,3 +8,5 @@ RealMadridManagement-CRUD-php adalah website yang dapat melakukan operasi dasar 
 2. **Read / Baca**: User dapat melihat data yang ada di database.
 3. **Update / Ubah**: User dapat melakukan update data yang ada di sistem.
 4. **Delete / Hapus**: User dapat menghapus data yang diinginkan dari sistem.
+5. **Login**: User dapat melakukan login.
+6. **Register**: User dapat melakukan registrasi akun.
