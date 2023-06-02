@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     $sql = "SELECT * FROM users WHERE username=? OR email=?";
     $stmt = mysqli_prepare($conn, $sql);
 
-    // bind parameter ke query
+    // bind parameter to query
     mysqli_stmt_bind_param($stmt, "ss", $username, $username);
 
     mysqli_stmt_execute($stmt);
@@ -19,14 +19,14 @@ if (isset($_POST['login'])) {
 
     $user = mysqli_fetch_assoc($result);
 
-    // jika user terdaftar
+    // if user exist
     if ($user) {
-        // verifikasi password
+        // verify password
         if (password_verify($password, $user["password"])) {
-            // buat Session
+            // create session
             session_start();
             $_SESSION["user"] = $user;
-            // login sukses, alihkan ke halaman timeline
+            // login success, redirect to home.php
             header("Location: home.php");
             exit;
         }

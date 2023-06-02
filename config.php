@@ -6,7 +6,7 @@ $db_pass = "";
 $db_name = "realmadrid";
 
 try {    
-    //create PDO connection 
+    //create connection 
     $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 } catch(PDOException $e) {
     //show error

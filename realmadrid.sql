@@ -23,6 +23,3 @@ CREATE TABLE `users` (
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- INSERT DUMP DATA
-INSERT INTO `users` (`username`, `email`, `password`, `name`) VALUES ('superadmin', 'admin@gmail.com', 'admin123', 'Super Admin');
