@@ -31,6 +31,13 @@ if (isset($_POST['login'])) {
             exit;
         }
     }
+    // if user not exist
+    echo "
+        <script>
+                alert('Username or password is wrong!');
+                document.location.href = 'login.php';
+        </script>
+    ";
 }
 ?>
 
