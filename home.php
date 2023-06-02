@@ -1,20 +1,21 @@
-<?php 
+<?php
+require_once 'auth.php';
 require 'functions.php';
 ?>
 
-<?= header_template_auth("Welcome to Real Madrid") ?>
+<?= header_template("Real Madrid Management Player") ?>
     <div class="bgimg">
         <div class="caption">
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <h2 class="textImg">Welcome to The Club</h2>
+                    <h2 class="textImg">Welcome To</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <h5 class="textImg">Let Join Us</h5>
+                    <h5 class="textImg">Real Madrid Management Player</h5>
                 </div>
             </div>
         </div>
     </div>
-<?= footer_template_auth() ?>
+<?= footer_template() ?>

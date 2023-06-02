@@ -1,4 +1,5 @@
-<?php 
+<?php
+require_once 'auth.php';
 require 'functions.php';
 
 // Get id from URL

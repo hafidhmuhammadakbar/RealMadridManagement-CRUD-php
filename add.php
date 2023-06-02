@@ -1,23 +1,24 @@
-<?php 
-    require 'functions.php';
+<?php
+require_once 'auth.php';
+require 'functions.php';
 
-    if (isset($_POST["submit"])) {
-        if (add($_POST) > 0) {
-            echo "
-                <script>
-                    alert('Data added successfully!');
-                    document.location.href = 'player.php';
-                </script>
-            ";
-        } else {
-            echo "
-                <script>
-                    alert('Data failed to add!');
-                    document.location.href = 'player.php';
-                </script>
-            ";
-        }
+if (isset($_POST["submit"])) {
+    if (add($_POST) > 0) {
+        echo "
+            <script>
+                alert('Data added successfully!');
+                document.location.href = 'player.php';
+            </script>
+        ";
+    } else {
+        echo "
+            <script>
+                alert('Data failed to add!');
+                document.location.href = 'player.php';
+            </script>
+        ";
     }
+}
 ?>
 
 <?= header_template("Add Player Data") ?>
@@ -87,7 +88,6 @@
                     </div>
                 </div>
             </form>
-            
         </div>
     </main>
 <?= footer_template() ?>

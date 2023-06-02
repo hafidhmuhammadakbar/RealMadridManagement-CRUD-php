@@ -1,28 +1,29 @@
-<?php 
-    require 'functions.php';
-    
-    // get id di URL
-    $id = $_GET["id"];
+<?php
+require_once 'auth.php';
+require 'functions.php';
 
-    // query data barang berdasarkan ID
-    $player = query("SELECT * FROM `player` WHERE id=$id")[0];
+// get id di URL
+$id = $_GET["id"];
 
-    //tombol submit ditekan atau belum
-    if(isset($_POST["submit"])){
-        // cek data ada yang diubah atau tidak
-        if (update($_POST) > 0) {
-            echo "<script>
-                alert('Change data success!');
-                document.location.href = 'player.php';
-            </script>";
-        }
-        else {
-            echo "<script>
-                alert('Change data failed!');
-                document.location.href = 'player.php';
-            </script>";
-        }
+// query data barang berdasarkan ID
+$player = query("SELECT * FROM `player` WHERE id=$id")[0];
+
+//tombol submit ditekan atau belum
+if(isset($_POST["submit"])){
+    // cek data ada yang diubah atau tidak
+    if (update($_POST) > 0) {
+        echo "<script>
+            alert('Change data success!');
+            document.location.href = 'player.php';
+        </script>";
     }
+    else {
+        echo "<script>
+            alert('Change data failed!');
+            document.location.href = 'player.php';
+        </script>";
+    }
+}
 ?>
 
 <?= header_template("Edit Player Data") ?>

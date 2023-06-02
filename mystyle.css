@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -41,6 +42,10 @@ body {
     color: #F1EEE9;
 }
 
+main{
+    margin-bottom: 5rem;
+}
+
 .bgimg {
     position: relative;
     opacity: 0.65;
@@ -49,12 +54,12 @@ body {
     background-size: cover;
     background-image: url('img/bg_realmadrid.jpg');
     height: 100%;
+    width: 100%;
 }
 
 .caption {
     position: absolute;
-    left: 0;
-    top: 50%;
+    top: 30%;
     width: 100%;
     text-align: center;
 }
@@ -83,8 +88,24 @@ body {
     font-weight: bold;
 }
 
-main {
-    margin-bottom:  5rem;
+.p-title{
+    margin-bottom: 3rem;
+    color: #00529F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.p-title a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #FEBE10;
+}
+
+.p-title a:hover, .p-title a:focus{
+    color: #EE324E;
 }
 
 #form-search {
@@ -228,7 +249,6 @@ main {
     align-items: flex-end;
 }
 
-
 #btn-input {
     background-color: #00529F;
     color: #F1EEE9;
@@ -239,9 +259,18 @@ main {
     align-items: center;
 }
 
-footer{    
+.footer-main{    
     padding: 1rem;
     background-color: #00529F;
+}
+
+.footer-auth{    
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 5rem;
+    background: #00529F;
 }
 
 footer a:link, footer a:visited {
